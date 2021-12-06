@@ -1,0 +1,8 @@
+inicio:
+  path: /
+  controller: App\Controller\IndexController::index
+
+# incluyendo otro yml
+#_paises:
+#  prefix: /paises
+#  resource: routing/paises.yml

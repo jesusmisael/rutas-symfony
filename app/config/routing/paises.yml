@@ -1,0 +1,21 @@
+paises_listado:
+  path: /paises
+  defaults:       # Archivo app/Controller/paises/lista.php
+    _file: paises/lista.php
+
+paises_crear:
+  path: /paises/crear
+  defaults:
+    _file: paises/crear.php
+
+paises_editar:
+  path: /paises/editar/{id}
+  defaults:
+    _file: paises/editar.php
+  requirements:    # Permite definir restricciones para los parametros
+    id: +d       # Solo números :-)
+
+paises_listado_json:
+  path: /all.json
+  defaults:
+    _file: paises/lista.json.php  # Archivo app/Controller/paises/lista.php
