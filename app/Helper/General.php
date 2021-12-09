@@ -8,9 +8,9 @@ class General
 {
     static function render_template(array $args)
     {
-        if($args[1]!=""){
+        if(isset($args[1]) && $args[1]!=""){
             if(is_array($args[1])) {
-                extract($args[1]);
+                $view = (object)$args[1];
             } else {
                 return new Response('Ha pasado un parametro diferente a un array', 500);
             }
