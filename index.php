@@ -1,5 +1,6 @@
 <?php
 
+use App\config\App;
 use App\Integra\Framework;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,8 +13,21 @@ use Symfony\Component\Routing\Router;
 
 require_once './vendor/autoload.php';
 
-const APP_PATH = 'app/'; //contiene la ruta hasta app
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+date_default_timezone_set('America/Mexico_City');
+error_reporting(E_ALL);//muestra todos los errores
+// error_reporting(E_ERROR | E_WARNING | E_PARSE);//muestra solo errores warning o errores de sintaxis
+//error_reporting(E_ERROR | E_PARSE);//muestra todos los errores
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+session_start();
+
+App::Config();
+
+const DIR_ROOT = __DIR__;
 const VIEW_PATH = __DIR__. '/resource/views/';
+
 $request = Request::createFromGlobals();
 
 $options = array(
