@@ -58,3 +58,6 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+
+# excluimos el env
+.env
