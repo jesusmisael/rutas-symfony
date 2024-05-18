@@ -10,7 +10,8 @@
         "symfony/config": "*",
         "symfony/yaml": "*",
         "symfony/http-kernel": "^5.4",
-        "vlucas/phpdotenv": "^5.4"
+        "vlucas/phpdotenv": "^5.4",
+        "phpmailer/phpmailer": "^6.9"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.4"
