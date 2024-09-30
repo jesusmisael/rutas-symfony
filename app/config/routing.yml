@@ -1,0 +1,14 @@
+inicio:
+  path: /
+  controller: App\Controller\IndexController::index
+  methods: GET
+
+ejemplo_GET:
+  path: /ejemplo/{variable1}/{variable2}
+  controller: App\Controller\IndexController::ejemploGET
+  methods: GET
+
+ejemplo_POST:
+  path: /ejemplo/
+  controller: App\Controller\IndexController::ejemploPOST
+  methods: POST
