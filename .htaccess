@@ -1,3 +1,7 @@
+# Define el entorno de la aplicación
+SetEnv APP_ENV development
+# Define el entorno de la aplicación
+# SetEnv APP_ENV production
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
