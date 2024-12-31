@@ -37,8 +37,8 @@ En Windows, puedes abrir el Explorador de Archivos y navegar hasta la carpeta do
 
 Asegúrate de tener instalado [Composer](https://getcomposer.org/), el gestor de dependencias para PHP. Si no lo tienes, puedes descargarlo desde su [sitio oficial](https://getcomposer.org/).
 
-El proyecto está configurado por defecto para usar PHP 8.1. Sin embargo, si prefieres utilizar PHP 8.2, puedes hacerlo fácilmente.
-Solo necesitas eliminar o renombrar el archivo composer.json original, y luego renombrar el archivo composer-php8.2.json a composer.json.
+El proyecto está configurado por defecto para usar PHP 8.3. Sin embargo, si prefieres utilizar PHP 8.2 o PHP 8.1, puedes hacerlo fácilmente.
+Solo necesitas eliminar o renombrar el archivo composer.json original, y luego renombrar el archivo composer-php-8.2.json o composer-php-8.1.json a composer.json.
 
 Puedes hacerlo ejecutando el siguiente comando en la terminal:
 
