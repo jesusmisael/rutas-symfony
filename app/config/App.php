@@ -6,7 +6,7 @@ class App
 {
     static function Config(){
         $url='https://'.$_SERVER["HTTP_HOST"]. $_ENV['CARPETA_PROYECTO'];
-        $version=$_ENV['CARPETA_PROYECTO'].'.'.rand(0,40).'.'.rand(0,20);
+        $version=$_ENV['VERSION'].'.'.rand(0,40).'.'.rand(0,20);
         define('PATH_SITE', $url);
         define('VERSION', $version);
         define("MODE", $_ENV['MODE']);
@@ -18,11 +18,5 @@ class App
         define("MAIL_HOST", $_ENV['MAIL_HOST']);
         define("MAIL_USER", $_ENV['MAIL_USER']);
         define("MAIL_PASSWORD", $_ENV['MAIL_PASSWORD']);
-        // variables especificas para produccion
-        if(MODE=="production"){
-            // define('PATH_WS', $_ENV['PATH_WS_PRODUCTION']);
-        }else{
-            // define('PATH_WS', $_ENV['PATH_WS_DEVELOPMENT']);
-        }
     }
 }
